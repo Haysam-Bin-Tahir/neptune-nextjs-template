@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Template
 
-## Getting Started
+This is a simple Next.js app. You can ask your AI agent to deploy to Neptune.
 
-First, run the development server:
+## What is Neptune?
+
+Neptune is an AI-native platform engineer. Once you install the Neptune MCP, you can just ask your AI agent to do the deployment for you, without any manual configuration.
+
+## Deploy to Neptune
+
+### Install Neptune
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+curl -fSsL https://neptune.dev/install.sh | bash
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Add Neptune to Claude Code
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+After installation, add Neptune to your `mcp.json`:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```json
+{
+  "mcpServers": {
+    "Neptune": {
+      "command": "neptune",
+      "args": ["mcp"]
+    }
+  }
+}
+```
 
-## Learn More
+Or use the Claude Code command:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+claude mcp add Neptune neptune mcp
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Simply ask your AI agent:
 
-## Deploy on Vercel
+```txt
+deploy to neptune
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+That's it! Your app will be deployed and accessible via a public URL.

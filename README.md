@@ -28,9 +28,11 @@ Neptune is an AI-native platform engineer. Once you install the Neptune MCP, you
 curl -fSsL https://neptune.dev/install.sh | bash
 ```
 
-### Add Neptune to Claude Code
+### Add Neptune to Your IDE
 
-After installation, add Neptune to your `mcp.json`:
+After installation, you'll need to add Neptune to your MCP client.
+
+In **Cursor**: Add Neptune to your `mcp.json`:
 
 ```json
 {
@@ -43,20 +45,20 @@ After installation, add Neptune to your `mcp.json`:
 }
 ```
 
-Or use the Claude Code command:
+In **Claude Code**: Use the command to add Neptune to your MCP client:
 
 ```bash
 claude mcp add Neptune neptune mcp
 ```
 
-For other IDEs and editors, see the [installation guide](https://docs.neptune.dev/quickstart).
+For other IDEs and MCP clients, see the [installation guide](https://docs.neptune.dev/quickstart).
 
 ### Deploy
 
 Simply ask your AI agent:
 
 ```txt
-deploy to neptune
+Deploy to Neptune
 ```
 
 That's it! Your app will be deployed and accessible via a public URL.

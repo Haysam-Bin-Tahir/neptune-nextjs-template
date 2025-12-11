@@ -1,6 +1,20 @@
+<div align="center">
+  <img src="./public/neptune.svg" alt="Neptune" width="200"/>
+</div>
+
+---
+
+<div align="center">
+
 # Next.js Template
 
 This is a simple Next.js app. You can ask your AI agent to deploy to Neptune.
+
+</div>
+
+<div align="center">
+  <img src="./site.png" alt="Neptune x NextJS Site" width="600"/>
+</div>
 
 ## What is Neptune?
 

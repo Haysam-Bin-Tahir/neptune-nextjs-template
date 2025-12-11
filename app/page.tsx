@@ -27,6 +27,10 @@ export default function Home() {
           <span>NextJS</span>
         </h1>
 
+        <p className="text-lg text-white/60">
+          🎉 Congrats on deploying your first Neptune project
+        </p>
+
         <div className="mt-8 flex gap-4">
           <a
             href="https://shuttlerust.typeform.com/to/QZC0w0Dx"

@@ -49,6 +49,8 @@ Or use the Claude Code command:
 claude mcp add Neptune neptune mcp
 ```
 
+For other IDEs and editors, see the [installation guide](https://docs.neptune.dev/quickstart).
+
 ### Deploy
 
 Simply ask your AI agent:
@@ -58,3 +60,7 @@ deploy to neptune
 ```
 
 That's it! Your app will be deployed and accessible via a public URL.
+
+## Learn More
+
+For more information, check out the [Neptune Quickstart Guide](https://docs.neptune.dev/quickstart).
